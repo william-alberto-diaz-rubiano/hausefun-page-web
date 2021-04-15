@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title> Hausefun-Diversión para tu mascota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="pagina web para hausefun"/>
     <meta name="author" content="Hausefun"/>
     <meta name="keywords" content="gimnasios para gatos, torres de gatos, arbol de gatos, gatos, mascotas, gatos , casas de perros, perros"/>
@@ -10,7 +11,7 @@
 
     <!--custom css-->
     <link rel="stylesheet" type= "text/css" href="/source/styles/style.css">
-
+    <link rel="stylesheet" type= "text/css" href="/source/styles/responsive.css">
     <!-- font amesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
@@ -60,17 +61,19 @@
     </header>    
     <main>
 
-        <section class="cards-link-section">
+        <div class="cards-link-section">
             <div class="cards-link-div">
-                <img class="cards-link-image" src="/source/images/a2.webp" alt="gym 1"></a>  
+               <div class="cards-link-image">
+                    <img class="cards-link-photo" src="/source/images/a2.webp" alt="gym 1">
+               </div>   
                 
                 <div class="cards-link-description">
                     <h4 class="cards-link-h4"> Descripción</h4>
-                    <p class="cards-link-p">Gimnacio de dos pisos que permite desarrollar las destrezas y habilidades de tu gatito <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo natus dolor <br> perspiciatis labore ullam, aliquid rem eum deserunt suscipit possimus architecto harum <br> fugit! Tempore esse assumenda accusamus aliquam alias? </p>
+                    <p class="cards-link-p">Gimnacio de dos pisos que permite desarrollar las destrezas y habilidades de tu gatito <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo natus dolor <br> perspiciatis labore ullam, aliquid rem  </p>
                 </div>
             </div>
 
-            <aside class="cards-link-aside">
+            <div class="cards-link-aside">
                 <div class="cards-link-price">
                     <h4 class="cards-link-gymname"> Gimnasio Titan</h4>
                     <p class="cards-link-cost"> $ 160.000 cop </p>
@@ -82,13 +85,8 @@
                         <button class="cards-link-button" type="submit">Añadir a mi cesta </button>
                     </form>
                 </div>
-            </aside>
-       
-
-        </section>
-   
- 
-    
+            </div>
+        </div>
         <section class="social" id="redes">
             <h2 class="social-h2">  Siguenos en nuestras redes sociales</h2>
     
@@ -96,7 +94,6 @@
                 <a class="social-a" href="https://www.facebook.com/Hausefun-Diversi%C3%B3n-para-tu-mascota-106483041317322" target="_blank"> <i class="fab fa-facebook-f"></i></a>
                 <a class="social-a" href="https://www.instagram.com/hausefun_mascotas/" target="_blank"><i class="fab fa-instagram"></i> </a>
             </div>
-            
         </section> 
 
     </main>    
@@ -113,12 +110,11 @@
             <li>informacion de ventas</li>
             <li>horario de atención</li>
             <li><a href="/index.html"> Volver al inicio</a> <br></li>            
-     </ul>
+    <h5 class="close">Derechos reservados 2021-2022>Derechos reservados 2021-2022</h5>
+        </ul> 
     </footer>
-
-        <h5>Derechos reservados 2021-2022</h5>  
+ 
 <script src="/source/scripts/main.js">
-
 </script>
 </body>
 

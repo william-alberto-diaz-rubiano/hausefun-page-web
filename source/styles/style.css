@@ -189,12 +189,13 @@ body{
 /* style gimnasios para gatos y casas para perros */
 .cards-gatos{
 
- background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/source/images/a24.webp);
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/source/images/a24.webp);
  background-size: cover; 
  background-attachment: fixed; 
+ 
 }
 .cards-perros{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(/source/images/a22.webp);
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(/source/images/a22.webp);
    background-size: cover;
    background-attachment: fixed;
 }
@@ -214,7 +215,7 @@ body{
 .cards-div{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(200px,1fr ));
-    margin:30px;
+    margin:5px;
     grid-gap: 25px;
     padding-left: 20px;
 }
@@ -328,7 +329,7 @@ body{
     border: black solid 1px;
     background: black;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px; 
     padding: 20px;
 }
@@ -414,47 +415,52 @@ body{
 /* styles-cards-links*/
 
 .cards-link-section{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: 700px;
-    margin-bottom: 50px;
-    margin-right: 50px;
+    height:auto;
+    
 }
 .cards-link-div{
-    width: 50%; 
-    margin-top: 50px;
+    width: 100%;
+    text-align: center;
 
 }
 .cards-link-image{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.cards-link-photo{
     max-width:100%;
     height: 350px; 
-    margin:50px 150px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 .cards-link-description{
+    width: 100%;
     border-top: black solid 1px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -20px;
-    padding-top: 10px;
+    margin: 20px;   
 }
 .cards-link-h4{
     font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .cards-link-p{
-    font-size: 16px;
-    margin-left: 30px;
-    margin-top: 10px;
-    text-align: left;
+    font-size: 15px;
+    text-align:center;
 }
 .cards-link-aside{
-    width: 30%; 
+    text-align: center;
+    width:50%; 
     background-color: white; 
-    height: 350px;
+    height: 250px;
     margin-top: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-left: 100px;
     padding-right: 40px;
     border-radius: 20px;
     border: solid black 1px ;
@@ -466,8 +472,8 @@ body{
 }
 .cards-link-gymname{
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .cards-link-cost{
    text-align: center;
@@ -489,9 +495,9 @@ body{
     margin-right: auto;
 }
 .cards-link-input{
-    width: 100%;
+    width: 150px;
     height: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -508,58 +514,9 @@ body{
     transform:scale(0,9); 
 }
 
-
-@media (max-width:750px) {
-    .main-menu-ul{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: black;
-        height: 100%;
-        padding-left: 20px;
-        opacity: .9;
-        transform: translateX(-400px);
-        transition: transform .5s ease-in-out;
-    }
-    .main-menu-ul.show{
-        transform: translateX(-10px);
-    }
-    .main-menu-a{
-        color: white;
-        font-size: 12px;
-    }
-    .main-menu-btn{
-        display:initial;
-    }
-    .social-a i{
-        font-size: 1.5rem;
-        color:red;
-        margin-right: 10px;
-    }
-    .social-h2{
-  
-        font-size: 20px;
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 10px 50px; 
-    }
-    .pie-ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        list-style: none;
-        color: white;
-        font-size: 12px;
-    }
-
-}
-@media (max-width:400px){
-    .cards-div{
-        display: grid;
-        grid-template-columns: repeat(auto-fit , minmax(200px,1fr ));
-        margin-left:50px;
-        grid-gap: 25px;
-        padding-left: 20px;
-    }
+.close{
+    margin-top: 15px;
+    color: white;
+    font-family: cursive;
+    font-size: 10px;
 }
