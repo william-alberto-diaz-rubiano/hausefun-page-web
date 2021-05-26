@@ -24,7 +24,7 @@
        <!-- icono-->
          <link rel="icon" href="/source/images/log.ico">
 </head>
-<body>   
+<body>  
     <div class="main-menu-btn"> 
         <i class="fas fa-bars"></i>
     </div>
@@ -61,8 +61,9 @@
         <div class="main-menu-users">
             <div class=" main-menu-user">
                 <a class="main-menu-user-a" href="#"><i class=" fas fa-phone-square"></i> 3176450077</a>
+                <a class="main-menu-user-a" href="/source/views/shopingcart.html"> Mi cesta <i class="fas fa-shopping-cart"></i></a>
+                <a class="main-menu-user-a" href="#"> Favoritos<i class="fas fa-heart"></i></a>
                 <a class="main-menu-user-a" href="#"> Mi cuenta <i class="fas fa-user"></i></a>
-                <a class="main-menu-user-a" href="#"> Mi cesta <i class="fas fa-shopping-cart"></i></a>
             </div>
         
         </div>
@@ -87,110 +88,73 @@
                 
             <h2 class="proposito-h2">Nosotros</h2>
             <p class="proposito-p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore esse magni animi, ipsam non sit, velit voluptatum mollitia voluptatibus ea sunt maxime sint doloremque nobis, hic debitis. Laborum, tenetur provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti! Quasi minus rem tenetur, blanditiis animi atque mollitia natus eligendi voluptatibus repellendus vero libero suscipit. Reprehenderit impedit assumenda voluptatibus magni.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aut itaque reiciendis vitae placeat ad deserunt facilis, recusandae sit necessitatibus fuga voluptas qui ducimus esse dolores! Corrupti error pariatur quisquam.</p>
+        </section>
+    
+        <section class="interline">
+          <div class="interline-div"><img  class="interline-img" src="/source/images/a30.jpeg" alt="gym"></div> 
+          <div class="interline-div"><img  class="interline-img" src="/source/images/a29.jpeg" alt="casa"></div> 
+          <div class="interline-div"><img  class="interline-img" src="/source/images/a31.jpeg" alt="comedero"></div>  
+        </section>  
+<!-- section for description the tower cats -->
+        <section class="proposito">
+            <h3 class="proposito-h2">Gimnasios para gatos</h3>
+            <p class="proposito-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure distinctio nisi. Porro corrupti eligendi, ipsum sit hic molestias, nemo magni ipsa commodi officiis adipisci qui dolores harum animi velit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel neque dicta, recusandae, cum architecto ab natus eaque, voluptas vitae sequi et doloremque. Minima impedit dolor, odit vel eligendi quod?
+            </p>
+            <img class="proposito-img" src="/source/images/a28.jpg" alt="perros">
         </section>  
     
  <!--seccion para los gimnasios para gatos-->
         <section class="cards-gatos">
              <h3 class="cards-h3" id="gatos">Gimnacios para gatos</h3>
-            
-            <div class="cards-div">
-                
-                <div class="cards-div-min">
-                    <a href="/source/views/gym-a1.html"> <img class="cards-img" src="/source/images/a2.webp" alt="gym 1"></a>  
-                    <a class="cards-link" href="/source/views/gym-a1.html"> <h4 class="cards-h4"> Gimnasio Titan</h4></a>
-                    <p class="cards-p">Gimnacio de dos pisos que permite desarrollar las destrezas y habilidades de tu gatito</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>  </span>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a4.jpeg" alt="gym 2">
-                    <h4 class="cards-h4"> Gimnasio Especial</h4>
-                    <p class="cards-p">Gimnasio de tres pisos, elaborado para el descanso, comodidad y entretenimiento de tu minino</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a5.jpeg" alt="gym 3">
-                    <h4 class="cards-h4"> Gimnacio Exotico</h4>
-                    <p class="cards-p">La mejor manera de cuidar tus muebles es proporcionar un gimnasio de gatos para que puedan afilar sus uñas y estirar sus musculos</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a6.jpeg" alt="gym 4">
-                    <h4 class="cards-h4">Gimnacio Himalaya</h4>
-                    <p class="cards-p">No regañes o castigues a tu gato por destrozar los muebles o tapiceria del hogar con sus uñas ofrecele un sitio adecuado donde hacerlo.</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
 
-                   
+            <div class="card-row" id="items"></div>
+            
+             <template id="template-card">
+                
+             <div class="cards-div">
                 <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a7.jpeg" alt="gym 1">
-                    <h4 class="cards-h4"> Gimnasio Titan</h4>
-                    <p class="cards-p">Gimnacio de dos pisos que permite desarrollar las destrezas y habilidades de tu gatito</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>  </span>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a8.jpeg" alt="gym 2">
-                    <h4 class="cards-h4"> Gimnasio Especial</h4>
-                    <p class="cards-p">Gimnasio de tres pisos, elaborado para el descanso, comodidad y entretenimiento de tu minino</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a10.jpeg" alt="gym 3">
-                    <h4 class="cards-h4"> Gimnacio Exotico</h4>
-                    <p class="cards-p">La mejor manera de cuidar tus muebles es proporcionar un gimnasio de gatos para que puedan afilar sus uñas y estirar sus musculos</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a13.jpeg" alt="gym 4">
-                    <h4 class="cards-h4">Gimnacio Himalaya</h4>
-                    <p class="cards-p">No regañes o castigues a tu gato por destrozar los muebles o tapiceria del hogar con sus uñas ofrecele un sitio adecuado donde hacerlo.</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
+                    <img class="cards-img" src="" alt="">
+                    <h4 class="cards-h4"> namegym</h4>
+                    <p class="cards-p">description br
+                    </p>
+                    <p class="cards-price">Precio</p>
+                    <span class="cards-span"><button class="cards-a"><i class="fas fa-shopping-cart"></i> Comprar</button><button class="cards-b">Agregar <br> a favoritos <i class="fas fa-heart"> </i></button> </span>
                 </div>
             </div>
 
-         </section>
-        
+            </template>
+        </section>
+<!-- section for description the dog hauses -->
+        <section class="proposito">
+            <h3 class="proposito-h2">casas para perros  </h3>
+            <p class="proposito-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure distinctio nisi. Porro corrupti eligendi, ipsum sit hic molestias, nemo magni ipsa commodi officiis adipisci qui dolores harum animi velit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel neque dicta, recusandae, cum architecto ab natus eaque, voluptas vitae sequi et doloremque. Minima impedit dolor, odit vel eligendi quod?
+            </p>
+            <img class="proposito-img" src="/source/images/a27.jpg" alt="perros">
+        </section>
+
  <!-- seccion para las casas de perros -->
          <section class="cards-perros">
             <h3 class="cards-h3" id="perros">Casas para perros</h3>
+
+            <div class="card-row" id="items-casas"></div>
             
-            <div class="cards-div">
+             <template id="template-card-perros">
                 
+             <div class="cards-div">
                 <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a11.jpeg" alt="gym 1">
-                    <h4 class="cards-h4"> Gimnasio Titan</h4>
-                    <p class="cards-p"> Gimnacio de dos pisos que permite desarrollar las destrezas y habilidades de tu gatito</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img class="cards-img" src="/source/images/a12.jpeg" alt="gym 2">
-                    <h4 class="cards-h4"> Gimnasio Especial</h4>
-                    <p class="cards-p">Gimnasio de tres pisos, elaborado para el descanso, comodidad y entretenimiento de tu minino</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img  class="cards-img" src="/source/images/a13.jpeg" alt="gym 3">
-                    <h4 class="cards-h4"> Gimnacio Exotico</h4>
-                    <p class="cards-p">La mejor manera de cuidar tus muebles es proporcionar un gimnasio de gatos para que puedan afilar sus uñas y estirar sus musculos</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
-                </div>
-        
-                <div class="cards-div-min">
-                    <img  class="cards-img" src="/source/images/a15.jpeg" alt="gym 4">
-                    <h4 class="cards-h4">Gimnacio Himalaya</h4>
-                    <p class="cards-p">No regañes o castigues a tu gato por destrozar los muebles o tapiceria del hogar con sus uñas ofrecele un sitio adecuado donde hacerlo.</p>
-                    <span class="cards-span"> <a class="cards-a" href="#"><i class="fas fa-shopping-cart"></i> Comprar</a>  <a  class="cards-a" href="#">Mas fotos<i class="fas fa-angle-double-right"> </i></a>
+                    <img class="cards-img" src="" alt="">
+                    <h4 class="cards-h4"> namegym</h4>
+                    <p class="cards-p">description</p>
+                    <p class="cards-price">Precio</p>
+                    <span class="cards-span"><button class="cards-a"><i class="fas fa-shopping-cart"></i> Comprar</button><button class="cards-b">Agregar <br> a favoritos <i class="fas fa-heart"> </i></button> </span>
                 </div>
             </div>
-         </section>   
-        
+
+            </template>
+        </section>
+
  <!--redes sociales --> 
         <section class="social" id="redes">
             <h2 class="social-h2">  Siguenos en nuestras redes sociales</h2>
@@ -222,8 +186,6 @@
     <h5 class="close">Derechos reservados 2021-2022</h5>
     </footer>
    
-    <script src="/source/scripts/main.js">
-
-    </script>
+    <script src="/source/scripts/main.js" type="module"></script>
 </body>
 </html>
