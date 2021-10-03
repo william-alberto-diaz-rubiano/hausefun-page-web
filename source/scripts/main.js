@@ -82,7 +82,7 @@ const pintar= data => {
 }
 
 
-
+/*
 // add to shopping cart to produts
 
 const addCarrito=e=>{
@@ -108,3 +108,4 @@ const addCarrito=e=>{
    
   console.log(carrito)
 }
+*/
