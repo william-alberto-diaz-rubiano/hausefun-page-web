@@ -250,9 +250,14 @@ body{
 } */
 .card-row{
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(auto-fit , minmax(200px,1fr ));
     grid-gap: 25px;
    
+}
+.cards-div{
+    display: flex;
+	justify-content: center;
 }
 .cards-div-min{
     display: inline-block;
@@ -399,7 +404,7 @@ i{
 
 .pie-ul{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     list-style: none;
     color: white;
     font-size: 15px;

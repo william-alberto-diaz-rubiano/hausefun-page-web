@@ -5,11 +5,11 @@ const templateCardPerros=document.getElementById("template-card-perros").content
 const fragment =document.createDocumentFragment();
 const fragmentCasas =document.createDocumentFragment();
 
-export const btn=document.querySelector(".main-menu-btn")
+const btn=document.querySelector(".main-menu-btn")
 
 let carrito={}
 
-export const boton= btn.addEventListener("click", () => {
+const boton= btn.addEventListener("click", () => {
   document.querySelector(".main-menu-ul").classList.toggle("show");
 });
 
@@ -48,8 +48,7 @@ const pintarcards= data => {
     templatecard.querySelector(".cards-h4").textContent=producto.name
     templatecard.querySelector(".cards-p").textContent=producto.description
     templatecard.querySelector(".cards-price").textContent=producto.price
-    templatecard.querySelector(".cards-a").dataset.id=producto.id
-    templatecard.querySelector(".cards-b").dataset.id=producto.id
+
     const clone=templatecard.cloneNode(true)
     fragment.appendChild(clone)
   }) 
@@ -73,8 +72,7 @@ const pintar= data => {
     templateCardPerros.querySelector(".cards-h4").textContent=producto.name
     templateCardPerros.querySelector(".cards-p").textContent=producto.description
     templateCardPerros.querySelector(".cards-price").textContent=producto.price
-    templateCardPerros.querySelector(".cards-a").dataset.id=producto.id
-    templateCardPerros.querySelector(".cards-b").dataset.id=producto.id
+    
     const cloneCasas=templateCardPerros.cloneNode(true)
     fragmentCasas.appendChild(cloneCasas)
   }) 
@@ -82,30 +80,3 @@ const pintar= data => {
 }
 
 
-/*
-// add to shopping cart to produts
-
-const addCarrito=e=>{
-  // console.log(e.target)
-  if (e.target.classList.contains("cards-a")){
-     setcarrito(e.target.parentElement.parentElement)
-  }
-  e.stopPropagation()
-}
-
- const setcarrito= Objeto =>{
-    // console.log(Objeto)
-    const producto={
-      id:Objeto.querySelector(".cards-a").dataset.id,
-      name:Objeto.querySelector(".cards-h4").textContent,
-      price:Objeto.querySelector(".cards-price").textContent,
-      amount: 1
-    }
-    if (carrito.hasOwnProperty(producto.id)) {
-      producto.amount=carrito[producto.id].amount + 1
-    }
-    carrito[producto.id]={...producto}
-   
-  console.log(carrito)
-}
-*/
